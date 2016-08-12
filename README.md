@@ -18,6 +18,7 @@ How to run (detailed):
 To run example should be setuped:
  - [faas cli to start faas server](https://github.com/noserver-js/faas)
  - [functions examples](https://github.com/noserver-js/function-examples)
+ - [link faas-client](https://github.com/noserver-js/faas-client). Because it is not pushed to npm
  - [web-example](https://github.com/noserver-js/web-example)
 
 Link faas as npm package because it is not published at npm
@@ -36,6 +37,14 @@ npm link faas
 faas --help
 faas server
 ```
+Link faas client
+
+```bash
+git clone https://github.com/noserver-js/faas-client
+cd faas-clint
+npm i
+npm link
+````
 
 Clone and run web example
 
@@ -43,5 +52,6 @@ Clone and run web example
 git clone https://github.com/noserver-js/web-example
 cd web-example
 npm i
+npm link faas-client
 npm run start
 ```
